@@ -1,0 +1,21 @@
+{
+  "name": "cael",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch public/scss:public/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "bootstrap": "^5.2.2",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}

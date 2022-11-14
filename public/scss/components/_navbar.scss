@@ -1,0 +1,46 @@
+@use "../custom" as *;
+
+// Navbar
+body {
+  padding-top: 100px;
+}
+
+.menu {
+  background: #fdf2e9;
+  li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-link {
+    &:link,
+    &:visited {
+      color: $dark;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    &:hover,
+    &:active {
+      color: #cf711f;
+    }
+  }
+}
+
+.menu-scrolled {
+  background: $light;
+  li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-link {
+    &:link,
+    &:visited {
+      color: $dark;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    &:hover,
+    &:active {
+      color: #cf711f;
+    }
+  }
+}

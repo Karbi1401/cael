@@ -1,0 +1,78 @@
+// Theme
+/*
+- Primary: 
+#e67e22
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+
+- Shades: 
+#cf711f
+#45260a
+*/
+
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$font-family-base: "Inter", sans-serif;
+
+// Color
+$orange-primary: #e67e22;
+
+// Link
+$link-color: $orange-primary;
+$link-decoration: none;
+
+// Span
+.span-orange {
+  color: $orange-primary;
+}
+
+// Background
+.bg-orange-light {
+  background-color: #fdf2e9;
+}
+
+// Footer
+footer {
+  background-color: #fae5d3;
+}
+
+.fa-bullseye,
+.fa-quote-left,
+.fa-quote-right,
+.fa-eye {
+  color: $orange-primary;
+}
+
+
+.bg-paralax{
+  background-image:url("../img/bg_par2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -1;
+  background-attachment: fixed!important;
+}
+
+.bg-paralax::before{
+  content : '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(251, 241, 221, 0.8);
+  z-index: -2;
+}
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
