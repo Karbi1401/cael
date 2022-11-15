@@ -13,9 +13,6 @@
   </div>
 </div>
 <h1>BOIIIIII!!!</h1>
-<h1>awdawdawd</h1>
-<h1>fuawhdiouhiulhaiuofghaiupofghaioufg</h1>
-<h1>fawfwaqfafwafwafaf</h1>
 <main>
   <section class="bg-paralax">
     <div class="container col-xxl-8 px-4 py-5">
