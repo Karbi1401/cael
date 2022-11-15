@@ -8,16 +8,6 @@ class Users extends Controller
     $this->orderModel = $this->model('Order');
   }
 
-  public function index()
-  {
-    $users = $this->userModel->getAllUsers();
-    $data = [
-      'users' => $users
-    ];
-
-    $this->view('users/index', $data);
-  }
-
   public function signup()
   {
     if (Auth::adminAuth()) {

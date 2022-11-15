@@ -144,19 +144,4 @@ class User
       return false;
     }
   }
-
-  public function getAllUsers()
-  {
-    $this->db->query("SELECT * FROM tbluser");
-
-    $this->db->execute();
-
-    $users = $this->db->resultset();
-
-    if ($users) {
-      return $users;
-    } else {
-      return false;
-    }
-  }
 }
