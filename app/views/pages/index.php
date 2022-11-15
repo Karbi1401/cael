@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 <?php require APPROOT . '/views/inc/navbar.php'; ?>
-<h1>BOIIIIII!!!</h1>
+
 <div role="alert" aria-live="assertive" aria-atomic="true" class="toast fixed-bottom m-5 ms-auto" data-bs-autohide="false">
   <div class="toast-header">
     <img src="<?php echo URLROOT; ?>/img/logo-dark.png" height="40px" width="40px" class="rounded me-2" alt="...">
@@ -12,7 +12,7 @@
     Welcome to Cael's Delivery
   </div>
 </div>
-
+<h1>BOIIIIII!!!</h1>
 <main>
   <section class="bg-paralax">
     <div class="container col-xxl-8 px-4 py-5">
