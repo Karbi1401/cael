@@ -12,7 +12,7 @@
     Welcome to Cael's Delivery
   </div>
 </div>
-<h1>BOIIIIII!!!</h1>
+
 <main>
   <section class="bg-paralax">
     <div class="container col-xxl-8 px-4 py-5">
