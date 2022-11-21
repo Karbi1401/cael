@@ -12,17 +12,17 @@
     Welcome to Cael's Delivery
   </div>
 </div>
+
 <main>
   <section class="bg-paralax">
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="<?php echo URLROOT; ?>/img/hero.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <img src="<?php echo URLROOT; ?>/img/hero.png" class="d-block mx-lg-auto img-fluid" alt="Hero Image" width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3"><span class="span-orange">Cael's</span> Delivery</h1>
-          <p class="lead">Cael's Delivery is a family business that not just caters delicious foods, but lives with the perspective that nothing makes people closer together like pleasure and laughter.</p>
-          <a href="<?php echo URLROOT; ?>/pages/menu" class="btn btn-orange btn-lg px-4 me-md-2" role="button"><i class="fa-solid fa-arrow-right"></i> See Full Menu</a>
+          <p class="fs-4">Cael's Delivery is a family business that not just caters delicious foods, but lives with the perspective that nothing makes people closer together like pleasure and laughter.</p>
         </div>
       </div>
     </div>

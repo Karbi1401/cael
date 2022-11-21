@@ -423,4 +423,43 @@ class Users extends Controller
       redirect('pages');
     }
   }
+
+  public function forgot()
+  {
+    if (Auth::adminAuth()) {
+      redirect('admin/index');
+    } else {
+      if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $length = 50;
+        $token = bin2hex(openssl_random_pseudo_bytes($length));
+        $data = [
+          'email' => filter_var($_POST['email'], FILTER_SANITIZE_EMAIL),
+          'token' => $token,
+          'email_err' => ''
+        ];
+
+        if (empty($data['email'])) {
+          $data['email_err'] = 'Please input you email';
+        }
+
+        if (empty($data['email_err'])) {
+          if ($this->userModel->forgotPassword($data['email'], $data['token'])) {
+            Email::sendPass($data['email'], $data['token']);
+            flash('user_message', 'Please your email for password reset');
+          } else {
+            die('Something went wrong');
+          }
+        } else {
+          $this->view('users/forgot', $data);
+        }
+      } else {
+        $data = [
+          'email' => '',
+          'email_err' => ''
+        ];
+
+        $this->view('users/forgot', $data);
+      }
+    }
+  }
 }
